@@ -22,10 +22,8 @@ public class MatrixMult {
 				//Iterating through row of A at i
 				for(int j = 0; j < MatrixA[i].length; j++){
 					result = result + (MatrixA[i][j] * MatrixB[posX][posY]);
-					//System.out.println(MatrixA[i][j] + " * " + MatrixB[posX][posY] + " = " + result);
 					posX++;
 				}
-				//System.out.println("---------");
 				
 				//Storing the result
 				if(resX < resultMatrix.length-1){
@@ -42,7 +40,6 @@ public class MatrixMult {
 				if(i == MatrixA.length-1 && posY+1 != MatrixB[0].length){
 					posY++;
 					i = -1;
-					//System.out.println("==========");
 				}
 				posX = 0;
 				
